@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MediBot – Health Assistant</title>
+  <link rel="stylesheet" href="style2.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet"/>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="hero-section">
+    <div class="overlay"></div>
+    <div class="content">
+      <h1>MediBot 🤖</h1>
+      <p>Your Smart Health Assistant</p>
+      <input type="text" id="userInput" placeholder="Enter symptoms (e.g., headache, fever)">
+<button onclick="startVoiceInput()">🎤 Speak</button>
+<button onclick="analyzeUserInput()">Diagnose</button>
+
+      <div id="result"></div>
+
+      <!-- 🔊 Voice Buttons -->
+      <div id="voiceControls" style="margin-top: 15px; display: none;">
+        <button onclick="speakResult()">🔊 Speak</button>
+        <button onclick="stopSpeaking()">⏹️ Stop</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
